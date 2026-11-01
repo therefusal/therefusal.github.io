@@ -1,1 +1,262 @@
 
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TR | The Refusal</title>
+    <!-- Custom Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        refusal: {
+                            black: '#030303',
+                            obsidian: '#080808',
+                            surface: '#0F0F0F',
+                            border: '#1F1F1F',
+                            borderHover: '#383838',
+                            crimson: '#8B0000',
+                            crimsonHover: '#A30000',
+                            light: '#EDEDED',
+                            muted: '#666666'
+                        }
+                    },
+                    fontFamily: {
+                        header: ['Cinzel', 'serif'],
+                        mono: ['Space Mono', 'monospace'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030303;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1F1F1F;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8B0000;
+        }
+        /* Subtle Film Grain */
+        .bg-grain {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-refusal-black text-refusal-light font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-refusal-crimson selection:text-white relative overflow-x-hidden bg-grain p-3 sm:p-6">
+
+    <!-- VIEWPORT INDUSTRIAL BORDER FRAME -->
+    <div class="min-h-full flex flex-col justify-between border border-refusal-border bg-refusal-obsidian relative">
+        
+        <!-- CORNER PRECISION MARKERS -->
+        <div class="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-white/20 z-30"></div>
+        <div class="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-white/20 z-30"></div>
+        <div class="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-white/20 z-30"></div>
+        <div class="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-white/20 z-30"></div>
+
+        <!-- TOP SYSTEM STATUS BAR -->
+        <header class="w-full bg-refusal-surface border-b border-refusal-border py-3 px-6 flex flex-col sm:flex-row justify-between items-center font-mono text-[10px] tracking-[0.25em] text-refusal-muted uppercase gap-2">
+            <span>[ SYSTEM: SOVEREIGN VAULT ]</span>
+            <span class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-refusal-crimson animate-pulse"></span>
+                ACTIVE DOCTRINE // TR-01
+            </span>
+            <span>SECURE. ISOLATED.</span>
+        </header>
+
+        <!-- MAIN WRAPPER CONTAINER -->
+        <div class="flex-grow flex flex-col justify-between w-full max-w-4xl mx-auto px-6 sm:px-10 py-16 sm:py-20">
+            
+            <!-- BRAND IDENTITY HEADER -->
+            <div class="w-full text-center space-y-4 pb-16 border-b border-refusal-border">
+                <div class="w-12 h-12 mx-auto flex items-center justify-center bg-refusal-surface border border-refusal-border shadow-2xl">
+                    <img src="favicon.png" alt="The Refusal Crest" class="w-6 h-6 object-contain filter grayscale contrast-200">
+                </div>
+                <h1 class="font-header text-3xl sm:text-5xl font-black tracking-[0.3em] text-white uppercase">
+                    THE REFUSAL
+                </h1>
+                <p class="font-mono text-[10px] sm:text-xs text-refusal-muted tracking-[0.3em] uppercase">
+                    Absolute Non-Conformity & Monumental Silence
+                </p>
+            </div>
+
+            <!-- MAIN CONTENT SECTIONS -->
+            <main class="w-full py-16 space-y-24">
+                
+                <!-- HERO SECTION -->
+                <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-block font-mono text-[10px] text-refusal-muted tracking-[0.2em] uppercase border-b border-refusal-crimson pb-1">
+                            CANONICAL DIRECTIVE
+                        </div>
+                        <h2 class="font-header text-2xl sm:text-4xl font-bold text-white uppercase tracking-wider leading-snug">
+                            FREEDOM BEGINS WHERE COMPROMISE ENDS.
+                        </h2>
+                        <blockquote class="font-sans text-sm sm:text-base text-refusal-light/70 leading-relaxed italic border-l-0 lg:border-l border-refusal-crimson pl-0 lg:pl-4 py-1">
+                            "Most fail because they negotiate with environments designed for their destruction. Say no to expectations you never agreed to carry."
+                        </blockquote>
+                        <div class="pt-4">
+                            <a href="YOUR_AMAZON_BOOK_URL" target="_blank" rel="noopener noreferrer" 
+                               class="inline-block w-full sm:w-auto px-8 py-4 bg-white text-black font-mono text-xs uppercase tracking-[0.25em] font-bold border border-white transition-all duration-300 hover:bg-refusal-crimson hover:text-white hover:border-refusal-crimson text-center shadow-2xl">
+                                ACQUIRE HARDCOVER <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- MINIMALIST MONOLITH CARD -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="w-full max-w-[280px] bg-refusal-surface border border-refusal-border p-8 flex flex-col justify-between space-y-12 shadow-2xl relative group hover:border-refusal-borderHover transition-all duration-500">
+                            <div class="space-y-2">
+                                <div class="font-mono text-[9px] text-refusal-muted tracking-widest uppercase">EDITION // 01</div>
+                                <h3 class="font-header text-xl font-bold tracking-widest text-white">THE REFUSAL</h3>
+                                <div class="w-6 h-px bg-refusal-crimson"></div>
+                            </div>
+                            <div class="py-6 flex justify-center">
+                                <img src="favicon.png" alt="The Refusal Crest" class="w-14 h-14 object-contain filter grayscale opacity-70 group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="font-mono text-[9px] text-refusal-muted tracking-wider uppercase border-t border-refusal-border pt-4">
+                                GLOBAL MANIFESTO ARCHIVE
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DIGITAL DOSSIER VAULT -->
+                <section class="bg-refusal-surface border border-refusal-border p-8 sm:p-12 relative">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-8 space-y-4">
+                            <div class="font-mono text-[10px] text-refusal-muted tracking-[0.2em] uppercase flex items-center gap-2">
+                                <i class="fa-solid fa-lock text-refusal-crimson"></i> SECURED DIGITAL DOSSIER
+                            </div>
+                            <h3 class="font-header text-xl sm:text-2xl font-bold text-white tracking-wide uppercase">
+                                THE UNFILTERED MANUSCRIPT (PDF EDITION)
+                            </h3>
+                            <p class="text-xs sm:text-sm text-refusal-light/60 font-sans leading-relaxed">
+                                Complete institutional text delivered instantly. Optimized for all devices and e-readers. Zero friction. Absolute direction.
+                            </p>
+                            <ul class="font-mono text-[11px] text-refusal-muted space-y-1 pt-2">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-refusal-crimson text-[10px]"></i> Unrestricted DRM-Free Files</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-refusal-crimson text-[10px]"></i> Immediate Automated Delivery</li>
+                            </ul>
+                        </div>
+
+                        <div class="lg:col-span-4 bg-refusal-obsidian border border-refusal-border p-6 text-center space-y-6">
+                            <div>
+                                <span class="font-mono text-[9px] text-refusal-muted uppercase tracking-widest block mb-1">Access Investment</span>
+                                <span class="font-header text-3xl font-black text-white">$16.99</span>
+                            </div>
+                            <a href="YOUR_GUMROAD_LINK" target="_blank" rel="noopener noreferrer" 
+                               class="block w-full py-4 bg-refusal-crimson text-white font-mono text-xs uppercase tracking-[0.25em] font-bold transition-colors duration-300 hover:bg-refusal-crimsonHover shadow-lg">
+                                ACQUIRE DOSSIER
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CORE DIRECTIVES ACCORDION -->
+                <section class="space-y-6">
+                    <div class="text-center space-y-2">
+                        <h3 class="font-header text-xl sm:text-2xl font-bold tracking-[0.2em] text-white uppercase">
+                            THE CORE DIRECTIVES
+                        </h3>
+                        <p class="font-mono text-[10px] text-refusal-muted tracking-[0.25em] uppercase">
+                            THREE PILLARS OF SOVEREIGNTY
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <!-- PILLAR 01 -->
+                        <div class="bg-refusal-surface border border-refusal-border transition-colors hover:border-refusal-borderHover">
+                            <button onclick="toggleAccordion('pillar-1')" class="w-full p-5 sm:p-6 text-left flex items-center justify-between font-header font-bold text-white text-sm sm:text-base tracking-wider uppercase">
+                                <span class="flex items-center gap-4">
+                                    <span class="font-mono text-xs text-refusal-crimson">01 //</span>
+                                    REJECTION OF NOISE
+                                </span>
+                                <i id="icon-pillar-1" class="fa-solid fa-chevron-down text-refusal-muted text-xs transition-transform duration-300"></i>
+                            </button>
+                            <div id="pillar-1" class="hidden border-t border-refusal-border p-6 bg-refusal-obsidian font-sans text-xs sm:text-sm text-refusal-light/70 leading-relaxed">
+                                Stop taking strategic counsel from spectators who carry zero risk in your outcome. Build in isolation and let finality speak louder than discussion.
+                            </div>
+                        </div>
+
+                        <!-- PILLAR 02 -->
+                        <div class="bg-refusal-surface border border-refusal-border transition-colors hover:border-refusal-borderHover">
+                            <button onclick="toggleAccordion('pillar-2')" class="w-full p-5 sm:p-6 text-left flex items-center justify-between font-header font-bold text-white text-sm sm:text-base tracking-wider uppercase">
+                                <span class="flex items-center gap-4">
+                                    <span class="font-mono text-xs text-refusal-crimson">02 //</span>
+                                    UNMOVABLE STANDARDS
+                                </span>
+                                <i id="icon-pillar-2" class="fa-solid fa-chevron-down text-refusal-muted text-xs transition-transform duration-300"></i>
+                            </button>
+                            <div id="pillar-2" class="hidden border-t border-refusal-border p-6 bg-refusal-obsidian font-sans text-xs sm:text-sm text-refusal-light/70 leading-relaxed">
+                                Discipline is not dependent on motivation. When conditions deteriorate, your structural output must remain rigid and unchanged.
+                            </div>
+                        </div>
+
+                        <!-- PILLAR 03 -->
+                        <div class="bg-refusal-surface border border-refusal-border transition-colors hover:border-refusal-borderHover">
+                            <button onclick="toggleAccordion('pillar-3')" class="w-full p-5 sm:p-6 text-left flex items-center justify-between font-header font-bold text-white text-sm sm:text-base tracking-wider uppercase">
+                                <span class="flex items-center gap-4">
+                                    <span class="font-mono text-xs text-refusal-crimson">03 //</span>
+                                    INTERNAL SOVEREIGNTY
+                                </span>
+                                <i id="icon-pillar-3" class="fa-solid fa-chevron-down text-refusal-muted text-xs transition-transform duration-300"></i>
+                            </button>
+                            <div id="pillar-3" class="hidden border-t border-refusal-border p-6 bg-refusal-obsidian font-sans text-xs sm:text-sm text-refusal-light/70 leading-relaxed">
+                                Never explain your benchmark to those committed to misunderstanding it. Preserve your energy exclusively for execution and output.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- FOOTER -->
+            <footer class="w-full pt-12 border-t border-refusal-border text-center space-y-2">
+                <div class="font-header text-xs tracking-[0.3em] text-white uppercase font-bold">
+                    @TheRefusal
+                </div>
+                <div class="font-mono text-[9px] text-refusal-muted tracking-[0.25em]">
+                    © 2026 THE REFUSAL. ALL RIGHTS RESERVED.
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ACCORDION SCRIPT -->
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
